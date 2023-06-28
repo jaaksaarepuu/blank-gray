@@ -26,11 +26,6 @@ blank
           }
       }
   }
-  window.onLoad = function(){
-    var icon = GetURLParameter('icon');
-    console.log("Icon: " + icon);
-    //document.getElementById('logo').className = "fa-solid fa-" + icon;
-};​
 </script>
 </head>
 
@@ -39,5 +34,13 @@ blank
   <i id="logo"></i>
   Chat
 </div>
+<script>
+  window.onLoad = function(){
+    console.log("Hello world!");
+    var icon = GetURLParameter('icon');
+    console.log("Icon: " + icon);
+    //document.getElementById('logo').className = "fa-solid fa-" + icon;
+  };​ 
+</script>
 </body>
 </html>
