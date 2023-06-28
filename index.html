@@ -19,6 +19,7 @@ blank
       var sURLVariables = sPageURL.split('&');
       for (var i = 0; i < sURLVariables.length; i++) 
       {
+          console.log(sURLVariables[i];
           var sParameterName = sURLVariables[i].split('=');
           if (sParameterName[0] == sParam) 
           {
@@ -36,9 +37,7 @@ blank
 </div>
 <script>
   window.onLoad = function(){
-    console.log("Hello world!");
     var icon = GetURLParameter('icon');
-    console.log("Icon: " + icon);
     //document.getElementById('logo').className = "fa-solid fa-" + icon;
   };​ 
 </script>
