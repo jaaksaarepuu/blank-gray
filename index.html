@@ -12,22 +12,6 @@ blank
   #logo{ height:50vh; margin:0px 20px 0px 20px; color: #7C19DD;}
 </style>
 <script src="https://kit.fontawesome.com/f5ff29d523.js" crossorigin="anonymous"></script>
-<script>
-  function GetURLParameter(sParam)
-  {
-      var sPageURL = window.location.search.substring(1);
-      var sURLVariables = sPageURL.split('&');
-      for (var i = 0; i < sURLVariables.length; i++) 
-      {
-          console.log(sURLVariables[i];
-          var sParameterName = sURLVariables[i].split('=');
-          if (sParameterName[0] == sParam) 
-          {
-              return sParameterName[1];
-          }
-      }
-  }
-</script>
 </head>
 
 <body bgcolor=#fff>
@@ -37,8 +21,9 @@ blank
 </div>
 <script>
   window.onLoad = function(){
-    var icon = GetURLParameter('icon');
-    //document.getElementById('logo').className = "fa-solid fa-" + icon;
+    const myUrl = new URL(window.location.toLocaleString());
+    const urlParams = new URLSearchParams(myUrl);
+    console.log(urlParams);
   };​ 
 </script>
 </body>
