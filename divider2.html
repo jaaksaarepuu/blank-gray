@@ -19,18 +19,20 @@
             height: 10px; /* Adjust the height of the line */
         }
 
-        line {
-            stroke: #523B5B;
-            stroke-width: 10; /* Adjust the stroke width of the line */
-            stroke-dasharray: 10, 10; /* Adjust the dash length and gap */
-            stroke-linecap: round; /* Round line caps */
+        circle {
+            fill: #523B5B;
+            r: 3; /* Adjust the radius of the circles */
         }
     </style>
     <title>Centered Horizontal Dotted Line</title>
 </head>
 <body>
     <svg>
-        <line x1="25%" y1="50%" x2="75%" y2="50%"></line>
+        <circle cx="25%" cy="50%"></circle>
+        <circle cx="40%" cy="50%"></circle>
+        <circle cx="55%" cy="50%"></circle>
+        <circle cx="70%" cy="50%"></circle>
+        <circle cx="85%" cy="50%"></circle>
     </svg>
 </body>
 </html>
