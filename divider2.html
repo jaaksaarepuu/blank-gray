@@ -16,19 +16,29 @@
 
         svg {
             width: 100%;
-            height: 4px;
+            height: 10px; /* Adjust the height of the line */
+        }
+
+        line {
+            stroke: #523B5B;
+            stroke-width: 10; /* Adjust the stroke width of the line */
         }
 
         circle {
-            fill: #3c184a;
-            r: 5;
+            fill: #523B5B;
+            r: 5; /* Adjust the radius of the circles */
         }
     </style>
     <title>Centered Horizontal Dotted Line</title>
 </head>
 <body>
     <svg>
+        <line x1="25%" y1="50%" x2="75%" y2="50%"></line>
+        <circle cx="25%" cy="50%"></circle>
+        <circle cx="37.5%" cy="50%"></circle>
         <circle cx="50%" cy="50%"></circle>
+        <circle cx="62.5%" cy="50%"></circle>
+        <circle cx="75%" cy="50%"></circle>
     </svg>
 </body>
 </html>
